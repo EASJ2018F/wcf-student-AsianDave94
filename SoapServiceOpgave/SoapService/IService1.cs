@@ -14,34 +14,16 @@ namespace SoapService
     {
 
         [OperationContract]
-        string GetData(int value);
+        string AddStudent();
 
-        [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        string FindStudent();
 
-        // TODO: Add your service operations here
-    }
+        string GetAllStudents();
 
+        string RemoveStudents();
 
-    // Use a data contract as illustrated in the sample below to add composite types to service operations.
-    [DataContract]
-    public class CompositeType
-    {
-        bool boolValue = true;
-        string stringValue = "Hello ";
+        string EditStudent();
 
-        [DataMember]
-        public bool BoolValue
-        {
-            get { return boolValue; }
-            set { boolValue = value; }
-        }
-
-        [DataMember]
-        public string StringValue
-        {
-            get { return stringValue; }
-            set { stringValue = value; }
-        }
+        
     }
 }

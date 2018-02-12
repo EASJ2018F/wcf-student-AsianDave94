@@ -12,22 +12,29 @@ namespace SoapService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public string GetData(int value)
+        public string AddStudent()
         {
-            return string.Format("You entered: {0}", value);
+            ;
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public string EditStudent()
         {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            throw new NotImplementedException();
+        }
+
+        public string FindStudent()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetAllStudents()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string RemoveStudents()
+        {
+            throw new NotImplementedException();
         }
     }
 }
