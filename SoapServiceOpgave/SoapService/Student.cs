@@ -16,7 +16,6 @@ namespace SoapService
         public string Email { get; set; }
 
         public int SSN { get; set; }
-
-
+        
     }
 }

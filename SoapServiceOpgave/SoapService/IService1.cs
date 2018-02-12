@@ -14,15 +14,19 @@ namespace SoapService
     {
 
         [OperationContract]
-        string AddStudent();
+        void AddStudent( Student student);
 
-        string FindStudent();
+        [OperationContract]
+        void FindStudent();
 
-        string GetAllStudents();
+        [OperationContract]
+        void GetAllStudents();
 
-        string RemoveStudents();
+        [OperationContract]
+        void RemoveStudents();
 
-        string EditStudent();
+        [OperationContract]
+        void EditStudent();
 
         
     }

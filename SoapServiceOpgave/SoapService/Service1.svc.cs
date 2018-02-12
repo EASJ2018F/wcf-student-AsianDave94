@@ -12,29 +12,30 @@ namespace SoapService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public string AddStudent()
+        public void AddStudent( Student student)
         {
-            ;
+            StudentList.Add(student);
         }
 
-        public string EditStudent()
+        public void EditStudent()
         {
             throw new NotImplementedException();
         }
 
-        public string FindStudent()
+        public void FindStudent()
         {
             throw new NotImplementedException();
         }
 
-        public string GetAllStudents()
+        public void GetAllStudents()
         {
             throw new NotImplementedException();
         }
 
-        public string RemoveStudents()
+        public void RemoveStudents()
         {
             throw new NotImplementedException();
         }
+        List<Student> StudentList = new List<Student>();
     }
 }
